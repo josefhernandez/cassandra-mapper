@@ -2,6 +2,7 @@
 docker run --rm --network=host -e DS_LICENSE=accept --name my-dse datastax/dse-server:6.8.2
 
 # Ejecución del test
+cd mapper
 mvn compile exec:java -Dexec.mainClass=com.isthari.cassandra.mapper.TestMapper
 
 Resultados 
